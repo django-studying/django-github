@@ -9,7 +9,7 @@ def index(request):
    return render(request, 'polls/index.html', context)
 
 def about(request):
-    pass
+    return render(request, 'polls/about.html')
 
 def contacts(request):
     pass
