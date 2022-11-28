@@ -9,7 +9,7 @@
     {% for name in name_list %}
 <!--        <li><a>{{ name }}</a></li>-->
 <!--        <li><a><a href="/polls/{{ name }}/">{{ name }}</a></a></li>-->
-        <li><a href="{% url 'polls:about' %}">{{ name }}</a></li>
+        <li><a href="{% url 'main:about' %}">{{ name }}</a></li>
     {% endfor %}
     </ul>
   </body>

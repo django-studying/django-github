@@ -6,10 +6,10 @@ def index(request):
    name_all = Main_barlist.objects.all()
    name_list = [name_all[i].name for i in range(len(name_all))]
    context = {'name_list': name_list}
-   return render(request, 'polls/index.html', context)
+   return render(request, 'main/index.html', context)
 
 def about(request):
-    return render(request, 'polls/about.html')
+    return render(request, 'main/about.html')
 
 def contacts(request):
     pass
