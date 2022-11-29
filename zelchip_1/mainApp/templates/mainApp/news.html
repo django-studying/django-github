@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+</head>
+<body>
+
+    <h3><strong>News page.</strong></h3>
+    {% if news %}
+    {% for item in news %}
+            <p><strong>{{item.title_news}}</strong></p>
+            <p>{{item.pub_date}}</p>
+            <p>{{item.content}}</p>
+            <p>&nbsp;</p>
+    {% endfor %}
+    {% else %}
+        <p>No news are available.</p>
+    {% endif %}
+</body>
+</html>
